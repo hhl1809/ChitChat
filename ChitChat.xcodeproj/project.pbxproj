@@ -14,6 +14,10 @@
 		492811671F21DD1A0097F114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492811651F21DD1A0097F114 /* LaunchScreen.storyboard */; };
 		492811701F2209C50097F114 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928116F1F2209C50097F114 /* RegisterViewController.swift */; };
 		492811721F2593250097F114 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 492811711F2593250097F114 /* GoogleService-Info.plist */; };
+		492811751F25A0C50097F114 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492811741F25A0C50097F114 /* User.swift */; };
+		492811781F25DCFB0097F114 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492811771F25DCFB0097F114 /* Helper.swift */; };
+		4928117A1F25E1A60097F114 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492811791F25E1A60097F114 /* Extension.swift */; };
+		4928117C1F26EEAF0097F114 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928117B1F26EEAF0097F114 /* LoaderViewController.swift */; };
 		A5E6CFB0D1C5BF358736D689 /* Pods_ChitChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49493FCAA0E4DAF47B7B28C4 /* Pods_ChitChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		492811681F21DD1A0097F114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4928116F1F2209C50097F114 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		492811711F2593250097F114 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		492811741F25A0C50097F114 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		492811771F25DCFB0097F114 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		492811791F25E1A60097F114 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4928117B1F26EEAF0097F114 /* LoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		49493FCAA0E4DAF47B7B28C4 /* Pods_ChitChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChitChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -65,6 +73,8 @@
 		4928115B1F21DD1A0097F114 /* ChitChat */ = {
 			isa = PBXGroup;
 			children = (
+				492811761F25DC350097F114 /* Common */,
+				492811731F25A0AA0097F114 /* Model */,
 				4928116E1F21EF420097F114 /* Controllers */,
 				4928115C1F21DD1A0097F114 /* AppDelegate.swift */,
 				492811601F21DD1A0097F114 /* Main.storyboard */,
@@ -83,6 +93,24 @@
 				4928116F1F2209C50097F114 /* RegisterViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		492811731F25A0AA0097F114 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				492811741F25A0C50097F114 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		492811761F25DC350097F114 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				492811771F25DCFB0097F114 /* Helper.swift */,
+				492811791F25E1A60097F114 /* Extension.swift */,
+				4928117B1F26EEAF0097F114 /* LoaderViewController.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		69A435C63F37F7383FFE6982 /* Frameworks */ = {
@@ -227,7 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492811751F25A0C50097F114 /* User.swift in Sources */,
 				492811701F2209C50097F114 /* RegisterViewController.swift in Sources */,
+				492811781F25DCFB0097F114 /* Helper.swift in Sources */,
+				4928117A1F25E1A60097F114 /* Extension.swift in Sources */,
+				4928117C1F26EEAF0097F114 /* LoaderViewController.swift in Sources */,
 				4928115F1F21DD1A0097F114 /* LoginViewController.swift in Sources */,
 				4928115D1F21DD1A0097F114 /* AppDelegate.swift in Sources */,
 			);
@@ -355,6 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W9C9379E59;
 				INFOPLIST_FILE = ChitChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hocluan.ChitChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,6 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W9C9379E59;
 				INFOPLIST_FILE = ChitChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hocluan.ChitChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +429,7 @@
 				4928116D1F21DD1A0097F114 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

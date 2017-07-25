@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
     
     // MARK: Outlets
     @IBOutlet weak var logoImageView: UIImageView!
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
@@ -52,7 +52,7 @@ class LoginViewController: UIViewController {
         
         
         // Animation load LoginViewController
-        UIView.animate(withDuration: 2, animations: {
+        UIView.animate(withDuration: 1, animations: {
             self.logoImageView.transform = CGAffineTransform.identity
         }) { (isSuccess) in
             if isSuccess {
@@ -65,6 +65,11 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: Actions
+    
+    @IBAction func signInAction(_ sender: Any) {
+        Helper.startLoader(target: self)
+    }
+    
     @IBAction func goToSignUp(_ sender: Any) {
     }
     
